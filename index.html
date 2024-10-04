@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Asset Risk Scoring Tool</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Asset Risk Scoring Tool</h1>
+        <form id="token-form">
+            <label for="token-name">Enter Token Name or URL:</label>
+            <input type="text" id="token-name" name="token-name" autocomplete="off" placeholder="e.g., Bitcoin or https://example.com">
+            <div id="suggestions"></div>
+            <button type="button" onclick="getRiskScore()">Check Risk Score</button>
+        </form>
+        <div id="risk-score-result"></div>
+    </div>
+    <script src="static/app.js"></script>
+</body>
+</html>
