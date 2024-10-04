@@ -45,7 +45,7 @@ function getRiskScore() {
         score = 'Approved';
         description = 'Token is approved for investment';
     } else if (['Monero', 'ZCash', 'Dash'].includes(tokenName)) {
-        score = 'Dangerous';
+        score = 'Caution';
         description = 'Unlisted but known token';
     } else if (['OneCoin', 'Bitconnect'].includes(tokenName)) {
         score = 'Scam';
